@@ -1,0 +1,138 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.main-container {
+  width: 100vw;
+  background-color: #9e9c9a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 14;
+}
+
+.calculator {
+  background-color: #448d9e;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.display {
+  background-color: rgb(241, 235, 224);
+  flex: 2;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding-right: 20px;
+  box-sizing: border-box;
+  width: 320px;
+}
+
+.display:hover {
+  background-color: rgba(241, 235, 224, 0.9);
+}
+
+.display-memory {
+  font-size: 30px;
+}
+
+.display-current {
+  font-size: 50px;
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  font-size: larger;
+  width: 320px;
+  display: flex;
+  gap: 5px;
+}
+
+.clear-button {
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 70px;
+  background-color: rgb(194, 78, 78);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.clear-button:hover {
+  background-color: rgba(194, 78, 78, 0.8);
+  cursor: pointer;
+}
+
+.delete-button {
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 70px;
+  background-color: rgb(194, 125, 194);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.delete-button:hover {
+  background-color: rgba(194, 125, 194, 0.8);
+  cursor: pointer;
+}
+
+.input-buttons {
+  display: flex;
+  flex: 4;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 5px;
+  width: 320px;
+}
+
+.input-button {
+  border: 2px solid black;
+  background-color: #f1ebe0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+}
+
+.input-button:hover {
+  background-color: rgba(241, 235, 224, 0.8);
+  cursor: pointer;
+}
+
+.footer {
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  font-weight: 400%;
+  flex: 1;
+  min-height: 50px;
+}
