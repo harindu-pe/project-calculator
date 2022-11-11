@@ -42,8 +42,9 @@ body {
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-around;
-  padding-right: 20px;
   box-sizing: border-box;
+  padding-right: 20px;
+  padding-top: 10px;
   width: 320px;
 }
 
@@ -51,12 +52,20 @@ body {
   background-color: rgba(241, 235, 224, 0.9);
 }
 
-.display-memory {
-  font-size: 30px;
+.display-memory-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.display-memory-1,
+.display-memory-operand,
+.display-memory-2,
+.display-memory-equals {
+  font-size: 40px;
 }
 
 .display-current {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .control-buttons {
